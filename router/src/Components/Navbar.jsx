@@ -9,16 +9,20 @@ const Navbar = () => {
     <img src="https://kalvium.community/images/sidebar-3d-logo.svg" alt="" />   
     </Link >
 
-    <div className='links'>
+    <div className='links' style={{marginRight:"15px",display:"flex",alignItems:"center",textDecoration:"none"}}>
         <Link to={"/about"}>
-        <h1 style={{cursor:"pointer"}}>ABOUT</h1>
+        <h2 style={{cursor:"pointer"}}>ABOUT</h2>
 
         </Link>
         <Link to={"/contact"}>
-        <h1 style={{cursor:"pointer"}}>CONTACT</h1>
+        <h2 style={{cursor:"pointer"}}>CONTACT</h2>
 
         </Link>
-    </div>
+        <Link to={"/form"}>
+        <h2 style={{cursor:"pointer"}}>REGISTER</h2>
+
+        </Link>
+    </div  >
     </div>
   )
 }

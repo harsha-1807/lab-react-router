@@ -8,6 +8,7 @@ import Contact from './Components/Contact'
 import About from './Components/About'
 import {Routes,Route} from "react-router-dom"
 import PageNotFound from './Components/PageNotFound'
+import Forms from './Components/Registration'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,8 +26,9 @@ function App() {
       <Route path="/" element={<Home/>}/>
       <Route path="/about" element={<About/>}/>
       <Route path="/contact" element={<Contact/>}/>
+      <Route path='/form' element={<Forms/>}/>
+      
       <Route path='*' element={<PageNotFound/>}/>
-     
     </Routes>
     </>
   )
